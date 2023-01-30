@@ -4,3 +4,7 @@
 
 # generate key
     php artisan key:generate
+
+# docs
+    https://documenter.getpostman.com/view/7130683/2s935hRSo6
+

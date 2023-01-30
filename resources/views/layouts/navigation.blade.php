@@ -12,7 +12,9 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
             data-accordion="false">
             <li class="nav-item">
-                <a href="{{ route('home') }}" class="nav-link">
+                <a href="{{ route('home') }}" class="nav-link
+                {{ Request::routeIs('home') ? 'active' : '' }}
+                ">
                     <i class="nav-icon fas fa-th"></i>
                     <p>
                         {{ __('Dashboard') }}
@@ -21,7 +23,12 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ route('users.index') }}" class="nav-link">
+                <a href="{{ route('users.index') }}" class="nav-link
+                {{ Request::routeIs('users.index') ? 'active' : '' }} 
+                {{ Request::routeIs('users.edit') ? 'active' : '' }} 
+                {{ Request::routeIs('users.show') ? 'active' : '' }} 
+                {{ Request::routeIs('users.create') ? 'active' : '' }}
+                ">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
                         {{ __('Users') }}
