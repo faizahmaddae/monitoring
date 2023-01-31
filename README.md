@@ -8,3 +8,6 @@
 # docs
     https://documenter.getpostman.com/view/7130683/2s935hRSo6
 
+
+
+https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/

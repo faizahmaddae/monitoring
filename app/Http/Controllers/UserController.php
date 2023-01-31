@@ -8,8 +8,13 @@ use App\Models\Client;
 
 class UserController extends Controller
 {
-    public function index()
-    {
+
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('admin');
+    }
+    
+    public function index(){
         $users = User::paginate();
 
         // add client to user
@@ -44,9 +49,15 @@ class UserController extends Controller
 
     // store
     public function store(UserStoreRequest $request){
-        $request->validated();
         
-        User::create(request()->all());
+        $request->validated($request->all());
+
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+        ]);
+        
         return redirect()->route('users.index');
     }
 

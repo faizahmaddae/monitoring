@@ -1,0 +1,57 @@
+body{
+    /* background-color: red; */
+}
+
+:root {
+    --primary-color: #1D2D55;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.UNICEF-logo{
+    height: 40px;
+}
+
+.fkhmedia-logo{
+    height: 70px;
+}
+
+
+.form-horizontal .control-label{
+    text-align: left;
+}
+.header-filters .form-control{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0px 5px;
+}
+.header-filters ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.btn-brand{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+.barnd-color{
+    color: var(--primary-color);
+}
+
+.bg-brand{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.grey-bg{
+    background-color: #E9E9E9;
+}
