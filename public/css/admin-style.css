@@ -1,0 +1,22 @@
+.login-logo img{
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.login-logo{
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.login-card-body{
+    margin-top: -40px;
+    background-color: #172c57;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}

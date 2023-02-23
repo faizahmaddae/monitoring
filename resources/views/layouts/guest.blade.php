@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="{{ asset('css/icheck-bootstrap.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/admin-style.css') }}">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="/">{{ config('app.name', 'Laravel') }}</a>
+        <!-- <a href="/">{{ config('app.name', 'Laravel') }}</a> -->
+        <img src="{{ asset('images/login_logo.png') }}">
     </div>
     <!-- /.login-logo -->
     <div class="card">

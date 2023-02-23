@@ -13,6 +13,10 @@
 
             <div class="row">
 
+                <div class="col-md-6">
+                    <div id="chart"></div>
+                </div>
+
                 <div class="col-md-10">
                     <div class="chart-container">
                         <!--  style="position: relative; height:70vh; width70vw" -->
@@ -29,6 +33,32 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+<script>
+    var options = {
+        series: [44, 55, 41, 17, 15],
+        chart: {
+            type: 'donut',
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
@@ -43,6 +73,8 @@
 
     new Chart(ctx, {
         responsive: true,
+        maintainAspectRatio: false,
+        aspectRatio: 4,
         type: 'doughnut',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'faiz'],
@@ -69,8 +101,10 @@
         },
 
         options: {
-            responsive: true,
-            aspectRatio: 1,
+            // responsive: true,
+            // maintainAspectRatio: false,
+            // aspectRatio:4 ,
+            // aspectRatio: 3/2,
             scales: {
                 y: {
                     beginAtZero: true,
