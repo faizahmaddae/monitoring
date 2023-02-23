@@ -10,4 +10,4 @@
 
 
 
-https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/
+https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/Commit number 1
