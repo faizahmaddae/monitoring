@@ -67,6 +67,7 @@ header{
 
 
 
+
 .nav-pills .nav-link.active, .nav-pills .nav-link{
     color: var(--primary-color);
     height: 80px;
