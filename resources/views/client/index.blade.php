@@ -2,33 +2,35 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-3">
-            hello sidebar
+<div>
+
+    <div class="d-flex align-items-start mytab">
+        <div class="nav flex-column nav-pills col-4 col-md-3 shadow-element" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="daliy-reports-tab" data-bs-toggle="pill" data-bs-target="#daliy-reports" type="button" role="tab" aria-controls="daliy-reports" aria-selected="true">
+                <span class="ps-md-5">Daliy Reports</span>
+            </button>
+            <button class="nav-link" id="share-of-voice-tab" data-bs-toggle="pill" data-bs-target="#share-of-voice" type="button" role="tab" aria-controls="share-of-voice" aria-selected="false">
+                <span class="ps-md-5">Share of Voice</span>
+            </button>
+            <button class="nav-link" id="mentions-tab" data-bs-toggle="pill" data-bs-target="#mentions" type="button" role="tab" aria-controls="mentions" aria-selected="false">
+                <span class="ps-md-5">Mentions</span>
+            </button>
+            <button class="nav-link" id="key-message-analysis-tab" data-bs-toggle="pill" data-bs-target="#key-message-analysis" type="button" role="tab" aria-controls="key-message-analysis" aria-selected="false">
+                <span class="ps-md-5">Key Message Analysis</span>
+            </button>
+            <button class="nav-link" id="polio-tab" data-bs-toggle="pill" data-bs-target="#polio" type="button" role="tab" aria-controls="polio" aria-selected="false">
+                <span class="ps-md-5">Polio</span>
+            </button>
         </div>
-
-        <div class="col-12 col-md-9 grey-bg px-5 py-3">
-            <h3 class="fs-1 barnd-color pt-3">Share Of Voice in All Media</h3>
-
-            <div class="row">
-
-                <div class="col-md-6">
-                    <div id="chart"></div>
-                </div>
-
-                <div class="col-md-10">
-                    <div class="chart-container">
-                        <!--  style="position: relative; height:70vh; width70vw" -->
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    hello
-                </div>
+        <div class="tab-content bg-white p-4 w-100" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="daliy-reports" role="tabpanel" aria-labelledby="daliy-reports-tab">
+                <!-- include daliy-reports -->
+                @include('client.daliy-reports')
             </div>
-
+            <div class="tab-pane fade" id="share-of-voice" role="tabpanel" aria-labelledby="share-of-voice-tab">Share of Voice</div>
+            <div class="tab-pane fade" id="mentions" role="tabpanel" aria-labelledby="mentions-tab">Mentions</div>
+            <div class="tab-pane fade" id="key-message-analysis" role="tabpanel" aria-labelledby="key-message-analysis-tab">Key Message Analysis</div>
+            <div class="tab-pane fade" id="polio" role="tabpanel" aria-labelledby="polio-tab">polio</div>
         </div>
     </div>
 </div>

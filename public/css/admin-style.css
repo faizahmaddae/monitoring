@@ -20,3 +20,21 @@
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
+
+.login-card-body .input-group .input-group-text, .register-card-body .input-group .input-group-text{
+    color: #fff !important;
+}
+
+[class*=icheck-]>label{
+    color: #d6d6d6 !important;
+}
+
+.login-page{
+    background: url(/images/text2.jpeg);
+    height: 100vh;
+}
+
+.login-box, .register-box{
+    max-width: 410px;
+    width: 100%;
+}

@@ -1,27 +1,59 @@
 <!-- https://getbootstrap.com/docs/5.0/examples/headers/ -->
 
-<nav class="py-2 bg-white border-bottom client-nav">
+<nav class="py-2  border-bottom client-nav">
     <div class="container d-flex flex-wrap align-items-center">
 
         <div class="nav me-auto">
-            <img class="fkhmedia-logo" src="{{ asset('images/fkhmedia-logo.png') }}" alt="">
+            <a href="{{url()->current()}}"><img class="fkhmedia-logo" src="{{ asset('images/fkhmedia-logo.png') }}" alt="fkhmedia"></a>
         </div>
 
         <div class="nav ms-auto">
-            <img class="UNICEF-logo" src="{{ asset('images/UNICEF_Logo.png') }}" alt="">
+            <a href="{{url()->current()}}"><img class="UNICEF-logo" src="{{ asset('images/UNICEF_Logo.png') }}" alt="UNICEF"></a>
         </div>
 
     </div>
 </nav>
 
 
-<header class="py-3 mb-4 border-bottom">
+<!-- <div id="app">${message}</div> -->
+
+<script>
+    const {
+        createApp
+    } = Vue
+
+    createApp({
+        delimiters: ['${', '}'],
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        },
+        components: {
+            MyComponent: {
+                delimiters: ['${', '}'],
+                data() {
+                    return {
+                        message: 'Hello Vue!'
+                    }
+                },
+                template: '<div> ${message} dd</div>'
+            }
+        }
+    }).mount('#app')
+
+    // how to use MyComponent
+    
+</script>
+
+<header class="py-3 mb-0 border-bottom">
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center header-filters">
             <div class="col-12 col-md-3">
                 <span class="fs-6">Last update 11/29/2022</span>
             </div>
-            <div class="col-12 col-md-9 bg-white text-dark py-2 my-2">
+            <div class="col-12 col-md-9 text-dark py-2 my-2 filter-tools">
+
                 <form action="" class="form-horizontal">
                     <div class="row">
 
@@ -33,10 +65,7 @@
                                     <input type="date" class="form-control" id="start_date">
                                 </div>
                             </div>
-
                         </div>
-
-
 
                         <div class="col">
 
@@ -46,7 +75,6 @@
                                     <input type="date" class="form-control" id="end_date">
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="col">
@@ -74,12 +102,5 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container d-flex flex-wrap justify-content-center">
-        <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-light text-decoration-none">
-            <span class="fs-6">Last update 11/29/2022</span>
-        </a>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-    </div> -->
+
 </header>
