@@ -57,12 +57,12 @@ header{
     background-color: #E9E9E9;
 }
 .c-body {
-    background-image: url("../../images/text2.jpeg"); 
+    background-image: url("/images/text2.jpeg"); 
     background-position: center;
 }
 
 .filter-tools{
-    background-image: url("../../images/text2.jpeg");
+    background-image: url("/images/text2.jpeg");
 }
 
 
@@ -71,7 +71,7 @@ header{
     color: var(--primary-color);
     height: 80px;
     font-size: 16px;
-    background-image: url("../../images/text2.jpeg");
+    background-image: url("/images/text2.jpeg");
     text-align: start;
     border-radius: 0px;
     border-bottom: 1px solid var(--primary-color);
