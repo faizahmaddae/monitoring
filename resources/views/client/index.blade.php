@@ -35,21 +35,6 @@
     </div>
 </div>
 
-
-<style>
-
-.nav-link.active::after{
-    content: url("{{ asset('/svg/arrow-left.svg') }}");
-    fill: #1d2d55 !important;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: -2px;
-    top: 20px;
-}
-
-</style>
-
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 
