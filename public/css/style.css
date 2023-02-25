@@ -90,7 +90,7 @@ header{
 }
 
 .nav-link.active::after{
-    content: url("/svg/arrow-left.svg");
+    content: url("/public/svg/arrow-left.svg");
     fill: #1d2d55 !important;
     width: 25px;
     height: 25px;
