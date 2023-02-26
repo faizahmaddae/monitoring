@@ -15,37 +15,6 @@
 </nav>
 
 
-<!-- <div id="app">${message}</div> -->
-
-<script>
-    const {
-        createApp
-    } = Vue
-
-    createApp({
-        delimiters: ['${', '}'],
-        data() {
-            return {
-                message: 'Hello Vue!'
-            }
-        },
-        components: {
-            MyComponent: {
-                delimiters: ['${', '}'],
-                data() {
-                    return {
-                        message: 'Hello Vue!'
-                    }
-                },
-                template: '<div> ${message} dd</div>'
-            }
-        }
-    }).mount('#app')
-
-    // how to use MyComponent
-    
-</script>
-
 <header class="py-3 mb-0 border-bottom">
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center header-filters">

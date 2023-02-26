@@ -1,4 +1,4 @@
-body{
+body {
     /* background-color: red; */
 }
 
@@ -6,25 +6,26 @@ body{
     --primary-color: #1D2D55;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     color: white !important;
 }
 
-.UNICEF-logo{
+.UNICEF-logo {
     height: 40px;
 }
 
-.fkhmedia-logo{
+.fkhmedia-logo {
     height: 55px;
     margin: 10px 0px;
 }
 
 
-.form-horizontal .control-label{
+.form-horizontal .control-label {
     text-align: left;
 }
-.header-filters .form-control{
+
+.header-filters .form-control {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -32,11 +33,12 @@ header{
     box-shadow: none;
     padding: 0px 5px;
 }
+
 .header-filters ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-.btn-brand{
+.btn-brand {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -44,31 +46,34 @@ header{
     box-shadow: none;
     padding: 5px 10px;
 }
-.barnd-color{
+
+.barnd-color {
     color: var(--primary-color);
 }
 
-.bg-brand{
+.bg-brand {
     background-color: var(--primary-color);
     color: white;
 }
 
-.grey-bg{
+.grey-bg {
     background-color: #E9E9E9;
 }
+
 .c-body {
-    background-image: url("/images/text2.jpg"); 
+    background-image: url("/images/text2.jpg");
     background-position: center;
 }
 
-.filter-tools{
+.filter-tools {
     background-image: url("/images/text2.jpg");
 }
 
 
 
 
-.nav-pills .nav-link.active, .nav-pills .nav-link{
+.nav-pills .nav-link.active,
+.nav-pills .nav-link {
     color: var(--primary-color);
     height: 80px;
     font-size: 16px;
@@ -79,17 +84,19 @@ header{
 }
 
 /*  show */
-.nav-pills .nav-link.active, .nav-pills .show >.nav-link{
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: var(--primary-color) !important;
     font-weight: bold;
     border-bottom: 1px solid var(--primary-color);
     font-size: 23px;
 }
-.nav-link.active{
+
+.nav-link.active {
     position: relative;
 }
 
-.nav-link.active::after{
+.nav-link.active::after {
     content: url("/svg/arrow-left.svg");
     fill: #1d2d55 !important;
     width: 25px;
@@ -99,15 +106,42 @@ header{
     top: 20px;
 }
 
-.tab-content{
+.tab-content {
     height: 100vh;
 }
 
 .shadow-element {
-    /* border: 1px solid #333; */
-    /* width: 100px; */
-    /* height: 100px; */
-    box-shadow: 0 0 4px rgba(0,0,0,0.75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
     clip-path: inset(0px -15px 0px 0px);
     height: 100vh;
+}
+
+
+#carouselShare-of-voiceControls .carousel-inner .carousel-item {
+    height: 80vh;
+}
+
+#carouselShare-of-voiceControls .carousel-control-next, #carouselShare-of-voiceControls .carousel-control-prev{
+    width: auto !important;
+}
+
+
+#carouselShare-of-voiceControls .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+ 
+#carouselShare-of-voiceControls .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#carouselShare-of-voiceControls .carousel-control-prev{
+    left: -20px;
+}
+
+#carouselShare-of-voiceControls .carousel-control-next {
+    right: -20px;
 }
