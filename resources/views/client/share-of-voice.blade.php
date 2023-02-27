@@ -9,9 +9,8 @@
             @include('client.share-of-voice-tabs.tab2')
         </div>
         <div class="carousel-item">
-            <div class="d-block w-100">
-                hello 3
-            </div>
+            <!-- tab3 -->
+            @include('client.share-of-voice-tabs.tab3')
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselShare-of-voiceControls" role="button" data-slide="prev">
@@ -27,7 +26,7 @@
 
 <script>
     $(document).ready(function() {
-        $('#carouselShare-of-voiceControls').carousel(1);
+        // $('#carouselShare-of-voiceControls').carousel(2);
     });
     // bootstrap carousel init index 1
     // $('#carouselShare-of-voiceControls').carousel(1);
