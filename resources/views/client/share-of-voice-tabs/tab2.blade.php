@@ -1,7 +1,7 @@
 <div class="d-block w-100">
     <h3>Share of Voice by Media</h3>
     <p>
-    Share of Voice in Comparison to UNICEF’s Peers/Comparative Organizations by Media Type During a Specific Period of Time (Broadcast Media refers to TV and radio)
+    Share of Voice in Comparison to UNICEF's Peers/Comparative Organizations by Media Type During a Specific Period of Time (Broadcast Media refers to TV and radio)
     </p>
     <div class="row">
         <div class="col-12 col-md-3">
