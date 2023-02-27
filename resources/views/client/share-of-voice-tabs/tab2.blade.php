@@ -15,7 +15,6 @@
         </div>
         <div class="col-12 col-md-3">
             <!-- labels of chars -->
-            <h4>UNICEF</h4>
             <ul>
                 <li>UNICEF</li>
                 <li>Save the Children</li>
