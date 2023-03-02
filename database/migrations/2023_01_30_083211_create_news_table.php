@@ -18,7 +18,7 @@ return new class extends Migration
             // headline
             $table->string('headline')->nullable(true);
             // summary
-            $table->string('summary')->nullable(true);
+            $table->longText('summary')->nullable(true);
             // date
             $table->date('date')->nullable(true);
             // is_topstory
