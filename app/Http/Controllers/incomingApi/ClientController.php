@@ -96,8 +96,14 @@ class ClientController extends Controller
      */
     public function destroy($id)
     {
+        // if client not found
+        if(!$client = Client::find($id)){
+            return $this->error([
+                'client' => $client
+            ], 'Client not found for delete', 404);
+        }
+        
         // delete client
-        $client = Client::find($id);
         $client->delete();
         return $this->success([
             'client' => $client
