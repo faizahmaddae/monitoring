@@ -27,8 +27,8 @@ class StoreReflectionRequest extends FormRequest
             'news_id' => ['required', 'integer'],
             'media_id' => ['required', 'integer'],
             // 'date' => ['required', 'date'],
-            'begin' => ['required', 'string'],
-            'end' => ['required', 'string'],
+            'begin' => ['required', 'integer'],
+            'end' => ['required', 'integer'],
             'language' => ['required', 'string', 'max:32'],
             // 'date_format:H:i:s'
         ];
