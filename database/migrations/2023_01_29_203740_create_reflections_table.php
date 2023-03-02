@@ -22,9 +22,9 @@ return new class extends Migration
             // date 
             $table->date('date')->nullable(true);
             // begin
-            $table->string('begin')->nullable(true);
+            $table->integer('begin')->nullable(true);
             // end
-            $table->string('end')->nullable(true);
+            $table->integer('end')->nullable(true);
             // language
             $table->string('language')->nullable(true);
             
