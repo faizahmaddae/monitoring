@@ -28,8 +28,9 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->configureRateLimiting();
 
+        // add cors middleware to all routes
         $this->routes(function () {
-            Route::middleware('api')
+            Route::middleware( ['api', 'cors'] )
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
